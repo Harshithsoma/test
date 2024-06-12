@@ -44,7 +44,7 @@ export const login = async (req, res) => {
       }
     );
 
-    const { password: userPasssword, ...userInfo } = user;
+    const { password: userPassword, ...userInfo } = user;
 
     res
       .cookie("token", token, {
